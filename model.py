@@ -18,8 +18,4 @@ model = RandomForestClassifier()
 
 model.fit(X_train,y_train)
 
-# predictions = model.predict(X_test)
-# accuracy = model.score(X_test, y_test)
-# print("Accuracy:", accuracy*100)
-
 pickle.dump(model,open("model.pkl","wb"))
